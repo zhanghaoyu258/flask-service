@@ -8,7 +8,7 @@ def order_list():
     user_info = session.get("user_info")
     username = user_info['username']
     print(user_info, type(user_info))
-    data_list = db.fetch_all("select * from order", [])
+    data_list = db.fetch_all("select * from order1", [])
 
     return render_template('order.htnl')
 
